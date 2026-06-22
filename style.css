@@ -1,0 +1,597 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display Bold" Arial;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0px;
+  list-style: none;
+  padding: 0px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header-menu {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: #141414;
+  font-size: 1.25rem;
+  padding: 10px 20px;
+  line-height: 1.3;
+  display: block;
+}
+
+.introducao {
+  max-width: 1200px;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  margin: 0 auto;
+  gap: 100px;
+}
+
+.introducao h1 {
+  font-size: 4.5rem;
+  line-height: 1.125;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.introducao h1::before {
+  content: "";
+  width: 130px;
+  height: 100px;
+  display: block;
+  background: url(/img/detalhe.svg) no-repeat center;
+  position: absolute;
+  top: -15px;
+  left: -40px;
+  z-index: -1;
+}
+
+.local {
+  font-size: 1.56rem;
+  font-weight: bold;
+  margin-top: 30px;
+  color: rgb(104, 103, 103);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.desenvolvedor {
+  font-size: 4.5rem;
+  position: relative;
+}
+
+.lobo {
+  width: 360px;
+  height: 520px;
+  display: flex;
+}
+
+.experiencia {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 100px;
+}
+
+.area-left {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 40ch;
+  color: rgb(220, 220, 220);
+}
+
+.right-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  position: relative;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  gap: 10px 20px;
+  flex-wrap: wrap;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#4ff55d, #48c452);
+  top: 20px;
+  left: -4px;
+}
+
+.card-ano {
+  font-size: 1rem;
+  color: #525252;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  width: 80px;
+  text-align: right;
+}
+
+.card-titulo {
+  font-size: 1.25rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.card-subtitulo {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #525252;
+  font-weight: bold;
+}
+
+.card-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 250px;
+  align-content: flex-start;
+}
+
+.card-habilidades li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.formacao {
+  background: #202020;
+  max-width: 1200px;
+  padding: 40px 40px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+}
+
+.formacao-nome {
+  display: flex;
+  justify-content: end;
+  font-size: 7rem;
+  word-break: break-all;
+  width: 7ch;
+  text-transform: uppercase;
+}
+
+.formacao-right {
+  display: grid;
+  justify-items: start;
+  gap: 60px;
+}
+
+.formacao-texto {
+  color: rgb(160, 160, 160);
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+}
+
+.formacao-lista {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formacao-card-itens {
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(8, 8, 8);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formacao-subtitulo::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#4ff55d, #48c452);
+  margin-left: -24px;
+}
+
+.formacao-titulo {
+  color: rgb(160, 160, 160);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.formacao-subtitulo {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  position: relative;
+  flex: 1;
+}
+
+.formacao-roda-pe {
+  color: rgb(160, 160, 160);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.curso-1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: rgb(160, 160, 160);
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.curso-1::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  display: block;
+  background-image: url(/img/cursos.svg) no-repeat center;
+  left: -40px;
+}
+
+.curso-2::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  display: block;
+  background-image: url(/img/idiomas.svg) no-repeat center;
+  left: -40px;
+}
+
+.cursos,
+.idiomas {
+  margin-bottom: 60px;
+}
+
+.curso,
+li span {
+  color: rgb(160, 160, 160);
+}
+
+.pintar {
+  color: rgb(160, 160, 160);
+}
+
+.cursos,
+.idiomas li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  list-style: none;
+  line-height: 1.8;
+}
+
+.card-iten-1 {
+  text-transform: uppercase;
+}
+
+.card-contato {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 500px;
+  padding: 40px 40px;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.card-contato::before {
+  content: "";
+  width: 130px;
+  height: 110px;
+  display: block;
+  background: url(/img/detalhe.svg) no-repeat center;
+  position: absolute;
+  margin-top: -580px;
+  margin-left: -700px;
+}
+
+.contato-texto {
+  font-size: 2rem;
+  max-width: 32ch;
+  color: rgb(160, 160, 160);
+}
+
+.contato-right h5 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+footer {
+  width: 1200px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(160, 160, 160);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.direitos {
+  padding: 40px 20px;
+  padding-left: 150px;
+}
+
+/* ----------------------------MEDIA--------------------------- */
+
+@media (max-width: 1024px) {
+  .header a {
+    background-color: #c6c6c6;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+  .introducao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .introducao h1 {
+    font-size: 4rem;
+  }
+
+  .experiencia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .area-left {
+    max-width: 100% !important;
+    text-align: center;
+    line-height: 1;
+    font-size: 6rem;
+  }
+
+  .area-right {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .right-texto {
+    justify-content: center;
+    text-align: center;
+    max-width: 45ch;
+  }
+
+  .card {
+    justify-items: center;
+  }
+
+  .formacao-card-itens {
+    position: relative;
+  }
+
+  .formacao-card-itens::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#4ff55d, #48c452);
+    margin-left: -24px;
+    margin-top: 40px;
+  }
+
+  .formacao-subtitulo::before {
+    display: none;
+  }
+
+  .card-subtitulo {
+    max-width: 226px;
+  }
+
+  .card-habilidades {
+    max-width: 226px;
+  }
+
+  .formacao {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formacao-nome {
+    font-size: 6rem;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+  }
+  .formacao-right {
+    justify-items: center;
+    text-align: center;
+  }
+
+  .formacao-texto {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card-contato::before {
+    display: none;
+  }
+
+  .card-contato {
+    display: flex;
+    gap: 200px;
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contato-texto {
+    font-size: 2rem;
+  }
+
+  .card-contato h5 {
+    font-size: 2rem;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: flex;
+    max-width: 100%;
+  }
+
+  footer p {
+    text-align: start;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .header-menu {
+    justify-content: center;
+  }
+
+  .introducao {
+    justify-content: center;
+  }
+
+  .local {
+    font-size: 1rem;
+  }
+
+  .area-left {
+    font-size: 3rem;
+  }
+
+  .right-texto {
+    font-size: 1rem;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+    padding: 10px;
+  }
+
+  .card-titulo {
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .card-subtitulo {
+    font-size: 1rem;
+    font-weight: bold;
+    max-width: 300px;
+  }
+
+  .card-habilidades {
+    justify-content: center;
+    padding-top: 40px;
+  }
+
+  .card-habilidades li {
+    font-size: 0.7rem;
+  }
+
+  .card-ano {
+    font-size: 1rem;
+    color: #525252;
+    font-weight: bold;
+    top: -25px;
+    left: 95px;
+    width: 80px;
+    text-align: right;
+  }
+
+  .card::before {
+    display: none;
+  }
+
+  .card-titulo::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: linear-gradient(#4ff55d, #48c452);
+    top: -14px;
+    left: 14px;
+  }
+
+  .formacao-nome {
+    font-size: 3rem;
+  }
+
+  .formacao-texto {
+    font-size: 1rem;
+  }
+
+  .contato-texto {
+    font-size: 1.5rem;
+    max-width: 32ch;
+    color: rgb(160, 160, 160);
+  }
+
+  .contato-right h5 {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
