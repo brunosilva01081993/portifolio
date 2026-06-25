@@ -152,7 +152,8 @@ img {
   text-align: right;
 }
 
-.card-titulo {
+.card-titulo,
+.card-titulo-2 {
   font-size: 1.25rem;
   line-height: 1.1;
   font-weight: bold;
@@ -184,7 +185,7 @@ img {
 .formacao {
   background: #202020;
   max-width: 1200px;
-  padding: 40px 40px;
+  padding: 40px 20px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -327,7 +328,7 @@ li span {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 500px;
-  padding: 40px 40px;
+  padding: 40px 20px;
   align-items: center;
   justify-items: center;
   margin: 0 auto;
@@ -347,31 +348,26 @@ li span {
 }
 
 .contato-texto {
-  font-size: 2rem;
+  font-size: 1.5rem;
   max-width: 32ch;
   color: rgb(160, 160, 160);
 }
 
 .contato-right h5 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: white;
 }
 
 footer {
   width: 1200px;
-  height: 20px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 20px;
   background-color: rgb(0, 0, 0);
   color: rgb(160, 160, 160);
   font-size: 20px;
   display: flex;
   justify-content: center;
-}
-
-.direitos {
-  padding: 40px 20px;
-  padding-left: 150px;
 }
 
 /* ----------------------------MEDIA--------------------------- */
@@ -386,6 +382,10 @@ footer {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+  }
+
+  .desenvolvedor {
+    text-align: center;
   }
 
   .introducao h1 {
@@ -489,19 +489,20 @@ footer {
   }
 
   footer {
-    display: flex;
-    max-width: 100%;
+    text-align: center;
   }
 
   footer p {
-    text-align: start;
+    width: 100%;
+    text-align: center;
+    margin: 0;
   }
 }
 @media (max-width: 768px) {
   .header {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 51px;
   }
 
   .header-menu {
