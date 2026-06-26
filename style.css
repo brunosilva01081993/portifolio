@@ -398,7 +398,7 @@ footer {
   }
 
   .area-left {
-    max-width: 100% !important;
+    max-width: 100%;
     text-align: center;
     line-height: 1;
     font-size: 6rem;
@@ -594,5 +594,11 @@ footer {
   .contato-right h5 {
     font-size: 1.5rem;
     color: white;
+  }
+}
+
+@media (max-width: 550px) {
+  .introducao h1::before {
+    display: none;
   }
 }
